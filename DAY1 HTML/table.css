@@ -5,10 +5,11 @@ table {
     margin: 0 auto;
     font-family: Arial, sans-serif;
     font-size: 14px;
+    background-color: rgb(202, 229, 177);
   }
   
   th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #151414;
     padding: 8px;
     text-align: left;
   }
@@ -31,6 +32,6 @@ table {
   }
   
   tbody tr:last-child td[colspan="3"] {
-    border-top: 2px solid #ddd;
+    border-top: 2px solid #0e0d0d;
   }
   
