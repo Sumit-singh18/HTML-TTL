@@ -94,3 +94,39 @@ footer {
 h1 {
   text-align:center ;
 }
+.scroll-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .scroll-content {
+    display: inline-block;
+   align-items: center;
+  }
+  
+  img {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .bhagat-singh-table {
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  
+  .bhagat-singh-table th {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #e6e6e6;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .bhagat-singh-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
