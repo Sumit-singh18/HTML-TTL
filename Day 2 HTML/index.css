@@ -85,7 +85,7 @@ body {
   border: 1px solid rgb(2, 2, 21);
 }
 #leftmenu ul {
-    background-color: #355e9f;
+  background-color: #355e9f;
   list-style: none;
   padding: 0px;
   width: 100%;
@@ -163,4 +163,22 @@ img {
   float: left;
   padding: 20px;
   color: white;
+}
+/* Labels  and Inputs */
+label {
+  margin-right: 50px;
+}
+input[type="text"] {
+  width: 50%;
+  padding: 5px 5px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+
+table, th, td {
+  border: 1px dotted black;
+  border-collapse: collapse;
+  padding: 10px;
+
 }
