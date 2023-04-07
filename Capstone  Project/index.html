@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+ 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>CapstoneProject</title>
@@ -21,7 +23,22 @@
     />
   </head>
   <body>
-    <header>
+  <script>
+    var lastScrollTop;
+navbar = document.getElementById('navbar');
+window.addEventListener('scroll',function(){
+var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+if(scrollTop > lastScrollTop){
+navbar.style.top='-50px';
+}
+else{
+navbar.style.top='0';
+}
+lastScrollTop = scrollTop;
+});
+  </script>
+    <header >
+      <div id="navbar" >
       <nav>
         <img
           id="logo"
@@ -29,7 +46,7 @@
           alt="logo"
         />
         <!--for dropdown options/button-->
-        <div>
+        
           <!--first drop down-->
           <div class="dropdown-wrapper">
             <a class="menu-item"><i class="fas fa-caret-down">Demo Pages</i></a>
@@ -50,13 +67,13 @@
             </div>
           </div>
           <button class="primary-button">Buy Now</button>
-        </div>
+       
       </nav>
+    </div>
       <main>
         <section id="landing-section">
           <div id="main-text-wrapper">
             <h1>Vegan Store Capstone Project</h1>
-
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
               sunt libero, labore quis aut repudiandae incidunt obcaecati animi
@@ -70,7 +87,6 @@
         <div id="first-step" class="step-item">
           <i class="fa fa-cut">
             <h3>Step 01.</h3>
-
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
               impedit minima. Nemo ducimus alias non odio quae aperiam itaque
@@ -79,11 +95,9 @@
             </p>
           </i>
         </div>
-
         <div id="second-step" class="step-item">
           <i class="fa fa-paint-brush">
             <h3>Step 02.</h3>
-
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
               impedit minima. Nemo ducimus alias non odio quae aperiam itaque
@@ -92,11 +106,9 @@
             </p>
           </i>
         </div>
-
         <div id="third-step" class="step-item">
           <i class="fa fa-shopping-bag">
             <h3>Step 03.</h3>
-
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
               impedit minima. Nemo ducimus alias non odio quae aperiam itaque
@@ -105,11 +117,9 @@
             </p>
           </i>
         </div>
-
         <div id="fourth-step" class="step-item">
           <i class="fa fa-smile">
             <h3>Step 04.</h3>
-
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
               impedit minima. Nemo ducimus alias non odio quae aperiam itaque
@@ -119,59 +129,44 @@
           </i>
         </div>
       </section>
-
       <section id="store-section">
         <p id="fresh-food-heading">Fresh Food</p>
-
         <h3>Our Vegan Store!</h3>
-
         <p id="store-desc">
           Radish contains a lot of fiber, pectin and mineral salts.
         </p>
-
         <div id="store-items-wrapper">
           <div class="store-item">
             <div class="icon-wrapper">
               <i class="fa fa-camera"></i>
             </div>
-
             <h3>Fresh Vegetables</h3>
-
             <p>Use for cooking several types of vegetable oil.</p>
           </div>
-
           <div class="store-item">
             <div class="icon-wrapper">
               <i class="fa fa-rocket"></i>
             </div>
-
             <h3>High Quality</h3>
-
             <p>
               This is the best source of essential fatty acids for the body.
             </p>
           </div>
-
           <div class="store-item">
             <div class="icon-wrapper">
               <i class="fab fa-twitter"></i>
             </div>
-
             <h3>Sale</h3>
-
             <p>
               It is very good, if in the kitchen there will always be several
               bottles with different oils.
             </p>
           </div>
-
           <div class="store-item">
             <div class="icon-wrapper">
               <i class="fab fa-weixin"></i>
             </div>
-
             <h3>Best Price</h3>
-
             <p>
               Remember that unrefined oils are not suitable for heat treatment.
             </p>
@@ -179,13 +174,13 @@
         </div>
       </section>
       <!-- Video Section starts -->
+      <p class="phead">Still Have a Doubt? Watch Videos</p>
       <div class="video-row">
         <div class="video-item">
           <figure>
             <video controls>
               <source src="./Asset/video1.mp4" type="video/mp4" />
               <source src="video1.webm" type="video/webm" />
-
               Your browser does not support the video tag.
             </video>
             <figcaption>
@@ -214,8 +209,114 @@
           </figure>
         </div>
       </div>
-
-      <!-- Section ends -->
+      <!-- Testmonials  -->
+      <div class="Testmonial_Head">
+        <p id="fresh-food-heading">Fresh Food</p>
+        Our Vegan shop
+        <p class="subhead">
+          According to experts, any habit can be formed in 21 days. The same
+          statement applies to healthy eating.
+        </p>
+      </div>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <div class="testimonial-text">
+            <p>
+              "I can't believe how much this product has changed my life. I was
+              skeptical at first, but now I can't imagine going back to my old
+              ways."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img
+              height="240px"
+              width="200px"
+              src="./Asset/360_F_243587666_DXAiHEZwwbQBDWQRmu2KtfP1qofmEmrH.jpg"
+              alt="Testimonial Author"
+            />
+            <p>John Doe</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-text">
+            <p>
+              "This company is amazing! They went above and beyond to help me
+              with my problem, and I couldn't be more grateful."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img src="./Asset/download.jpg" alt="Testimonial Author" />
+            <p>Jane Smith</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-text">
+            <p>
+              "I've tried so many different products, but none of them have
+              worked as well as this one. I'm a customer for life!"
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img
+              height="240px"
+              width="200px"
+              src="./Asset/depositphotos_72333653-stock-photo-beautiful-young-happy-woman-posing.jpg"
+              alt="Testimonial Author"
+            />
+            <p>Mike Johnson</p>
+          </div>
+        </div>
+      </div>
+      <!--  ends -->
+      <section id="stats-section">
+        <div id="stats-wrapper">
+          <div class="stats-item">
+            <h3>7</h3>
+            <p>Year of Experiences</p>
+          </div>
+          <div class="stats-item">
+            <h3>123k</h3>
+            <p>Happy Customers</p>
+          </div>
+          <div class="stats-item">
+            <h3>72k</h3>
+            <p>100% Satisfaction</p>
+          </div>
+          <div class="stats-item">
+            <h3>13k</h3>
+            <p>Detox smoothies</p>
+          </div>
+        </div>
+      </section>
+      <!-- Follow Section Ends -->
+      <!-- Follow Section start -->
+      <section id="follow-section">
+        <div id="left-section">
+          <img
+            src="https://static.toiimg.com/thumb/resizemode-4,width-1200,height-900,msid-70086968/70086968.jpg"
+          />
+        </div>
+        <div id="right-section">
+          <div id="text-wrapper">
+            <h3 id="rt-heading" style="margin-left: 24%;">Newsletter</h3>
+            <p id="rt-desc" style="color: white;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+            </p>
+            <input style="
+            width: 90%;
+            " 
+            type="email" 
+            id="sub-email"
+             placeholder="Enter email" 
+             />
+            <input style="
+            width: 50%;
+            margin-left: 24%;" 
+            type="submit" id="sub-btn" value="Subscribe" />
+          
+          </div>
+        </div>
+      </section>
       <div class="container">
         <div class="flower-info">
           <h2>About Vegan</h2>
@@ -231,55 +332,32 @@
           </p>
         </div>
         <div class="contact-form">
-          <h2>Contact Us</h2>
+          <h2>Get in touch</h2>
           <form>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
-
             <label for="subject">Subject:</label>
             <input type="text" id="subject" name="subject" required />
-
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
-
             <button type="submit">Send Message</button>
           </form>
         </div>
       </div>
+      <!-- Ends -->
       <footer>
         <div class="footer">
-          <div class="footer-content">
-            <div class="footer-section">
-              <h3>About Us</h3>
-              <p>
-                We are a vegan company committed to promoting a healthy and
-                sustainable lifestyle.
-              </p>
-            </div>
-            <div class="footer-section">
-              <h3>Our Products</h3>
-              <ul>
-                <li>Plant-based meats</li>
-                <li>Dairy-free cheeses</li>
-                <li>Organic fruits and vegetables</li>
-              </ul>
-            </div>
-            <div class="footer-section">
-              <h3>Contact Us</h3>
-              <ul>
-                <li>123 Main Street</li>
-                <li>New York, NY 10001</li>
-                <li>Phone: (123) 456-7890</li>
-                <li>Email: info@myvegancompany.com</li>
-              </ul>
-            </div>
-          </div>
+          
           <p>&copy; 2023 My Vegan Company. All rights reserved.</p>
         </div>
       </footer>
     </header>
+
+
+
+
+    <!-- Navbar Scroll Scrippt -->
   </body>
 </html>
